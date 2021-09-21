@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Libraries" id="Libraries">
+	<SimpleField name="OBJECTID" type="int"></SimpleField>
+	<SimpleField name="GIS_ID" type="string"></SimpleField>
+	<SimpleField name="ADDRESS" type="string"></SimpleField>
+	<SimpleField name="PHONE" type="string"></SimpleField>
+	<SimpleField name="STATUS" type="string"></SimpleField>
+	<SimpleField name="WEB_URL" type="string"></SimpleField>
+	<SimpleField name="ADDRESS_ID" type="int"></SimpleField>
+	<SimpleField name="X" type="float"></SimpleField>
+	<SimpleField name="Y" type="float"></SimpleField>
+	<SimpleField name="LATITUDE" type="float"></SimpleField>
+	<SimpleField name="LONGITUDE" type="float"></SimpleField>
+	<SimpleField name="WARD" type="string"></SimpleField>
+	<SimpleField name="PSA" type="string"></SimpleField>
+</Schema>
+<Folder><name>Libraries</name>
+  <Placemark>
+	<name>Rosedale Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="GIS_ID">Libr_32</SimpleData>
+		<SimpleData name="ADDRESS">1701 Gales Street NE</SimpleData>
+		<SimpleData name="PHONE">(202) 727-5012
+</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/rosedale</SimpleData>
+		<SimpleData name="ADDRESS_ID">307101</SimpleData>
+		<SimpleData name="X">401810.05</SimpleData>
+		<SimpleData name="Y">136662.58</SimpleData>
+		<SimpleData name="LATITUDE">38.89781195</SimpleData>
+		<SimpleData name="LONGITUDE">-76.97913403</SimpleData>
+		<SimpleData name="WARD">Ward 6</SimpleData>
+		<SimpleData name="PSA">Police Service Area 507</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9793291602729,38.8978606139612</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Georgetown Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="GIS_ID">Libr_25</SimpleData>
+		<SimpleData name="ADDRESS">3260 R Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 727-0232</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/georgetown</SimpleData>
+		<SimpleData name="ADDRESS_ID">295142</SimpleData>
+		<SimpleData name="X">394275.35</SimpleData>
+		<SimpleData name="Y">138398.68</SimpleData>
+		<SimpleData name="LATITUDE">38.91343456</SimpleData>
+		<SimpleData name="LONGITUDE">-77.06600731</SimpleData>
+		<SimpleData name="WARD">Ward 3</SimpleData>
+		<SimpleData name="PSA">Police Service Area 206</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0660096107547,38.9134420170658</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Petworth Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="GIS_ID">Libr_26</SimpleData>
+		<SimpleData name="ADDRESS">4200 Kansas Avenue NW</SimpleData>
+		<SimpleData name="PHONE">(202) 243-1188</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/petworth</SimpleData>
+		<SimpleData name="ADDRESS_ID">295146</SimpleData>
+		<SimpleData name="X">397734.08</SimpleData>
+		<SimpleData name="Y">141590.17</SimpleData>
+		<SimpleData name="LATITUDE">38.94220022</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02613743</SimpleData>
+		<SimpleData name="WARD">Ward 4</SimpleData>
+		<SimpleData name="PSA">Police Service Area 404</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0261397196723,38.942207685179</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Mt. Pleasant Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="GIS_ID">Libr_31</SimpleData>
+		<SimpleData name="ADDRESS">3160 16th Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 671-3122
+202-671-3121
+(202) 671-3121</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/mtpleasant</SimpleData>
+		<SimpleData name="ADDRESS_ID">295138</SimpleData>
+		<SimpleData name="X">396779.31</SimpleData>
+		<SimpleData name="Y">140288.09</SimpleData>
+		<SimpleData name="LATITUDE">38.93046772</SimpleData>
+		<SimpleData name="LONGITUDE">-77.0371446</SimpleData>
+		<SimpleData name="WARD">Ward 1</SimpleData>
+		<SimpleData name="PSA">Police Service Area 408</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0371477050668,38.9304745554838</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Shaw (Watha T Daniel) Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="GIS_ID">Libr_28</SimpleData>
+		<SimpleData name="ADDRESS">1630 7th Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 727-1288</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/watha</SimpleData>
+		<SimpleData name="ADDRESS_ID">308201</SimpleData>
+		<SimpleData name="X">398073.03</SimpleData>
+		<SimpleData name="Y">138286.68</SimpleData>
+		<SimpleData name="LATITUDE">38.91244216</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02221836</SimpleData>
+		<SimpleData name="WARD">Ward 6</SimpleData>
+		<SimpleData name="PSA">Police Service Area 308</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0222147729392,38.9124654720859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Deanwood Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="GIS_ID">Libr_29</SimpleData>
+		<SimpleData name="ADDRESS">1350 49th Street NE</SimpleData>
+		<SimpleData name="PHONE">(202) 698-1175</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/deanwood</SimpleData>
+		<SimpleData name="ADDRESS_ID">307551</SimpleData>
+		<SimpleData name="X">405884.39</SimpleData>
+		<SimpleData name="Y">137844.91</SimpleData>
+		<SimpleData name="LATITUDE">38.90844496</SimpleData>
+		<SimpleData name="LONGITUDE">-76.93215558</SimpleData>
+		<SimpleData name="WARD">Ward 7</SimpleData>
+		<SimpleData name="PSA">Police Service Area 602</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9325438341953,38.9084716497269</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Benning Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="GIS_ID">Libr_2</SimpleData>
+		<SimpleData name="ADDRESS">3935 Benning Road NE</SimpleData>
+		<SimpleData name="PHONE">(202) 281-2583</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/dorothy</SimpleData>
+		<SimpleData name="ADDRESS_ID">295144</SimpleData>
+		<SimpleData name="X">404530.91</SimpleData>
+		<SimpleData name="Y">136260.63</SimpleData>
+		<SimpleData name="LATITUDE">38.89418122</SimpleData>
+		<SimpleData name="LONGITUDE">-76.94777105</SimpleData>
+		<SimpleData name="WARD">Ward 7</SimpleData>
+		<SimpleData name="PSA">Police Service Area 603</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9477733204199,38.8941886780432</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Capitol View Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="GIS_ID">Libr_3</SimpleData>
+		<SimpleData name="ADDRESS">5001 Central Avenue SE</SimpleData>
+		<SimpleData name="PHONE">(202) 645-0755</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/capitolview</SimpleData>
+		<SimpleData name="ADDRESS_ID">15509</SimpleData>
+		<SimpleData name="X">406109.69</SimpleData>
+		<SimpleData name="Y">135681.52</SimpleData>
+		<SimpleData name="LATITUDE">38.88895483</SimpleData>
+		<SimpleData name="LONGITUDE">-76.92957721</SimpleData>
+		<SimpleData name="WARD">Ward 7</SimpleData>
+		<SimpleData name="PSA">Police Service Area 604</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9295794622171,38.888962286293</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Chevy Chase Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="GIS_ID">Libr_4</SimpleData>
+		<SimpleData name="ADDRESS">5625 Connecticut Avenue NW</SimpleData>
+		<SimpleData name="PHONE">(202) 282-0021</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/chevychase</SimpleData>
+		<SimpleData name="ADDRESS_ID">263960</SimpleData>
+		<SimpleData name="X">393460.61</SimpleData>
+		<SimpleData name="Y">144186.75</SimpleData>
+		<SimpleData name="LATITUDE">38.96556949</SimpleData>
+		<SimpleData name="LONGITUDE">-77.07545672</SimpleData>
+		<SimpleData name="WARD">Ward 3</SimpleData>
+		<SimpleData name="PSA">Police Service Area 201</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0754590155456,38.9655769512103</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cleveland Park Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="GIS_ID">Libr_5</SimpleData>
+		<SimpleData name="ADDRESS">3310 Connecticut Ave NW</SimpleData>
+		<SimpleData name="PHONE">(202) 282-3080</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/clevelandpark</SimpleData>
+		<SimpleData name="ADDRESS_ID">221190</SimpleData>
+		<SimpleData name="X">394984.89</SimpleData>
+		<SimpleData name="Y">140660.69</SimpleData>
+		<SimpleData name="LATITUDE">38.933816</SimpleData>
+		<SimpleData name="LONGITUDE">-77.057843</SimpleData>
+		<SimpleData name="WARD">Ward 3</SimpleData>
+		<SimpleData name="PSA">Police Service Area 203</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0578448824669,38.9338232885117</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Francis A. Gregory Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="GIS_ID">Libr_7</SimpleData>
+		<SimpleData name="ADDRESS">3660 Alabama Avenue SE</SimpleData>
+		<SimpleData name="PHONE">(202) 698-6373</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/francis</SimpleData>
+		<SimpleData name="ADDRESS_ID">290019</SimpleData>
+		<SimpleData name="X">403974.72</SimpleData>
+		<SimpleData name="Y">133006.74</SimpleData>
+		<SimpleData name="LATITUDE">38.8648716</SimpleData>
+		<SimpleData name="LONGITUDE">-76.95420121</SimpleData>
+		<SimpleData name="WARD">Ward 7</SimpleData>
+		<SimpleData name="PSA">Police Service Area 607</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9539808692407,38.8648187896715</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Lamond-Riggs Library Interim</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="GIS_ID">Libr_8</SimpleData>
+		<SimpleData name="ADDRESS">395 Ingraham Street NE</SimpleData>
+		<SimpleData name="PHONE">(202) 541-6255</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/lamond
+</SimpleData>
+		<SimpleData name="ADDRESS_ID">314569</SimpleData>
+		<SimpleData name="X">400043.15</SimpleData>
+		<SimpleData name="Y">142834.08</SimpleData>
+		<SimpleData name="LATITUDE">38.953408</SimpleData>
+		<SimpleData name="LONGITUDE">-76.999502</SimpleData>
+		<SimpleData name="WARD">Ward 5</SimpleData>
+		<SimpleData name="PSA">Police Service Area 405</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9995044695255,38.9534161593364</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Martin Luther King Jr. Memorial Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="GIS_ID">Libr_9</SimpleData>
+		<SimpleData name="ADDRESS">901 G Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 727-0321</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/mlk</SimpleData>
+		<SimpleData name="ADDRESS_ID">239815</SimpleData>
+		<SimpleData name="X">397851.64</SimpleData>
+		<SimpleData name="Y">136760.32</SimpleData>
+		<SimpleData name="LATITUDE">38.89869166</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02476625</SimpleData>
+		<SimpleData name="WARD">Ward 2</SimpleData>
+		<SimpleData name="PSA">Police Service Area 101</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0247685454895,38.8986991164273</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Northeast Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="GIS_ID">Libr_10</SimpleData>
+		<SimpleData name="ADDRESS">330 7th Street NE</SimpleData>
+		<SimpleData name="PHONE">(202) 698-1363</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/northeast</SimpleData>
+		<SimpleData name="ADDRESS_ID">37106</SimpleData>
+		<SimpleData name="X">400315.86</SimpleData>
+		<SimpleData name="Y">136284.39</SimpleData>
+		<SimpleData name="LATITUDE">38.89440688</SimpleData>
+		<SimpleData name="LONGITUDE">-76.99635899</SimpleData>
+		<SimpleData name="WARD">Ward 6</SimpleData>
+		<SimpleData name="PSA">Police Service Area 107</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9963612610413,38.8944143344225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tenley-Friendship Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="GIS_ID">Libr_11</SimpleData>
+		<SimpleData name="ADDRESS">4450 Wisconsin Avenue NW</SimpleData>
+		<SimpleData name="PHONE">(202) 727-1488</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/tenley</SimpleData>
+		<SimpleData name="ADDRESS_ID">284921</SimpleData>
+		<SimpleData name="X">393074.94</SimpleData>
+		<SimpleData name="Y">142193.23</SimpleData>
+		<SimpleData name="LATITUDE">38.94760839</SimpleData>
+		<SimpleData name="LONGITUDE">-77.07988675</SimpleData>
+		<SimpleData name="WARD">Ward 3</SimpleData>
+		<SimpleData name="PSA">Police Service Area 202</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0798890644899,38.9476158460039</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Palisades Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="GIS_ID">Libr_12</SimpleData>
+		<SimpleData name="ADDRESS">4901 V Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 282-3139</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/palisades</SimpleData>
+		<SimpleData name="ADDRESS_ID">224474</SimpleData>
+		<SimpleData name="X">391572.87</SimpleData>
+		<SimpleData name="Y">138950.28</SimpleData>
+		<SimpleData name="LATITUDE">38.9183818</SimpleData>
+		<SimpleData name="LONGITUDE">-77.09717464</SimpleData>
+		<SimpleData name="WARD">Ward 3</SimpleData>
+		<SimpleData name="PSA">Police Service Area 205</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0971769529129,38.9183892524672</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Southeast Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="GIS_ID">Libr_14</SimpleData>
+		<SimpleData name="ADDRESS">403 7th Street SE</SimpleData>
+		<SimpleData name="PHONE">(202) 698-3377</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/southeast</SimpleData>
+		<SimpleData name="ADDRESS_ID">280068</SimpleData>
+		<SimpleData name="X">400302.33</SimpleData>
+		<SimpleData name="Y">135138.52</SimpleData>
+		<SimpleData name="LATITUDE">38.88408446</SimpleData>
+		<SimpleData name="LONGITUDE">-76.99651546</SimpleData>
+		<SimpleData name="WARD">Ward 6</SimpleData>
+		<SimpleData name="PSA">Police Service Area 107</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9965177288693,38.8840919096996</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Southwest Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="GIS_ID">Libr_15</SimpleData>
+		<SimpleData name="ADDRESS">900 Wesley Place SW</SimpleData>
+		<SimpleData name="PHONE">(202) 724-4752</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/southwest</SimpleData>
+		<SimpleData name="ADDRESS_ID">295165</SimpleData>
+		<SimpleData name="X">398626.28</SimpleData>
+		<SimpleData name="Y">134540.69</SimpleData>
+		<SimpleData name="LATITUDE">38.87869795</SimpleData>
+		<SimpleData name="LONGITUDE">-77.01583178</SimpleData>
+		<SimpleData name="WARD">Ward 6</SimpleData>
+		<SimpleData name="PSA">Police Service Area 105</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0158340570151,38.8787054021985</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Shepherd Park Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="GIS_ID">Libr_16</SimpleData>
+		<SimpleData name="ADDRESS">7420 Georgia Avenue NW</SimpleData>
+		<SimpleData name="PHONE">(202) 541-6100</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/juanita</SimpleData>
+		<SimpleData name="ADDRESS_ID">253522</SimpleData>
+		<SimpleData name="X">397657.48</SimpleData>
+		<SimpleData name="Y">145817.5</SimpleData>
+		<SimpleData name="LATITUDE">38.98028088</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02703545</SimpleData>
+		<SimpleData name="WARD">Ward 4</SimpleData>
+		<SimpleData name="PSA">Police Service Area 401</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0270377341395,38.9802883540708</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Takoma Park Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="GIS_ID">Libr_17</SimpleData>
+		<SimpleData name="ADDRESS">416 Cedar Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 576-7252</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/takomapark</SimpleData>
+		<SimpleData name="ADDRESS_ID">251267</SimpleData>
+		<SimpleData name="X">398253.34</SimpleData>
+		<SimpleData name="Y">145168.59</SimpleData>
+		<SimpleData name="LATITUDE">38.97443675</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02015687</SimpleData>
+		<SimpleData name="WARD">Ward 4</SimpleData>
+		<SimpleData name="PSA">Police Service Area 401</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0201591497674,38.9744442131994</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Parklands-Turner Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="GIS_ID">Libr_19</SimpleData>
+		<SimpleData name="ADDRESS">1547 Alabama Avenue SE</SimpleData>
+		<SimpleData name="PHONE">(202) 645-4532</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/parklands</SimpleData>
+		<SimpleData name="ADDRESS_ID">304504</SimpleData>
+		<SimpleData name="X">401627.56</SimpleData>
+		<SimpleData name="Y">130931.77</SimpleData>
+		<SimpleData name="LATITUDE">38.84618686</SimpleData>
+		<SimpleData name="LONGITUDE">-76.98125132</SimpleData>
+		<SimpleData name="WARD">Ward 8</SimpleData>
+		<SimpleData name="PSA">Police Service Area 704</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9812535923305,38.846194308106</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bellevue Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="GIS_ID">Libr_20</SimpleData>
+		<SimpleData name="ADDRESS">115 Atlantic Street SW</SimpleData>
+		<SimpleData name="PHONE">(202) 243-1184</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/bellevue</SimpleData>
+		<SimpleData name="ADDRESS_ID">302935</SimpleData>
+		<SimpleData name="X">399186.87</SimpleData>
+		<SimpleData name="Y">129281.97</SimpleData>
+		<SimpleData name="LATITUDE">38.83132585</SimpleData>
+		<SimpleData name="LONGITUDE">-77.0093649</SimpleData>
+		<SimpleData name="WARD">Ward 8</SimpleData>
+		<SimpleData name="PSA">Police Service Area 708</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.009356729237,38.8313383532625</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>West End Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="GIS_ID">Libr_21</SimpleData>
+		<SimpleData name="ADDRESS">2301 L Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 724-8707</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/westend</SimpleData>
+		<SimpleData name="ADDRESS_ID">242337</SimpleData>
+		<SimpleData name="X">395608.43</SimpleData>
+		<SimpleData name="Y">137346.76</SimpleData>
+		<SimpleData name="LATITUDE">38.90396584</SimpleData>
+		<SimpleData name="LONGITUDE">-77.05062968</SimpleData>
+		<SimpleData name="WARD">Ward 2</SimpleData>
+		<SimpleData name="PSA">Police Service Area 207</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0504686073877,38.9039571270968</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Woodridge Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="GIS_ID">Libr_22</SimpleData>
+		<SimpleData name="ADDRESS">1801 Hamlin Street NE</SimpleData>
+		<SimpleData name="PHONE">(202) 541-6226</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/woodridge</SimpleData>
+		<SimpleData name="ADDRESS_ID">286483</SimpleData>
+		<SimpleData name="X">401853.38</SimpleData>
+		<SimpleData name="Y">139951.63</SimpleData>
+		<SimpleData name="LATITUDE">38.92744073</SimpleData>
+		<SimpleData name="LONGITUDE">-76.97862566</SimpleData>
+		<SimpleData name="WARD">Ward 5</SimpleData>
+		<SimpleData name="PSA">Police Service Area 504</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9786279226667,38.9274481906964</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Northwest One Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="GIS_ID">Libr_23</SimpleData>
+		<SimpleData name="ADDRESS">155 L Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 939-5946</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/northwest</SimpleData>
+		<SimpleData name="ADDRESS_ID">307736</SimpleData>
+		<SimpleData name="X">398818.89</SimpleData>
+		<SimpleData name="Y">137349.69</SimpleData>
+		<SimpleData name="LATITUDE">38.90400275</SimpleData>
+		<SimpleData name="LONGITUDE">-77.01361683</SimpleData>
+		<SimpleData name="WARD">Ward 6</SimpleData>
+		<SimpleData name="PSA">Police Service Area 103</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0132105385777,38.9040364657812</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Anacostia Library</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="GIS_ID">Libr_24</SimpleData>
+		<SimpleData name="ADDRESS">1800 Good Hope Road SE</SimpleData>
+		<SimpleData name="PHONE">(202) 715-7708</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">http://www.dclibrary.org/anacostia</SimpleData>
+		<SimpleData name="ADDRESS_ID">53560</SimpleData>
+		<SimpleData name="X">401854.99</SimpleData>
+		<SimpleData name="Y">133121.03</SimpleData>
+		<SimpleData name="LATITUDE">38.8659082</SimpleData>
+		<SimpleData name="LONGITUDE">-76.97862553</SimpleData>
+		<SimpleData name="WARD">Ward 8</SimpleData>
+		<SimpleData name="PSA">Police Service Area 701</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9784877179876,38.8659041832577</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Library Express</name>
+	<ExtendedData><SchemaData schemaUrl="#Libraries">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="GIS_ID">Libr_30</SimpleData>
+		<SimpleData name="ADDRESS">1990 K Street NW</SimpleData>
+		<SimpleData name="PHONE">(202) 727-1787</SimpleData>
+		<SimpleData name="STATUS">Open</SimpleData>
+		<SimpleData name="WEB_URL">https://www.dclibrary.org/libraryexpress</SimpleData>
+		<SimpleData name="ADDRESS_ID">218576</SimpleData>
+		<SimpleData name="X">396135.86</SimpleData>
+		<SimpleData name="Y">137148.75</SimpleData>
+		<SimpleData name="LATITUDE">38.90218491</SimpleData>
+		<SimpleData name="LONGITUDE">-77.04454792</SimpleData>
+		<SimpleData name="WARD">Ward 2</SimpleData>
+		<SimpleData name="PSA">Police Service Area 207</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0445502031064,38.902192364663</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

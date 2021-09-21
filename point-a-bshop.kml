@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Books_and_Barber_Shops" id="Books_and_Barber_Shops">
+	<SimpleField name="OBJECTID" type="int"></SimpleField>
+	<SimpleField name="BARBERSHOP" type="string"></SimpleField>
+	<SimpleField name="ADDRESS" type="string"></SimpleField>
+	<SimpleField name="PHONE" type="string"></SimpleField>
+	<SimpleField name="WARD" type="int"></SimpleField>
+	<SimpleField name="LATITUDE" type="float"></SimpleField>
+	<SimpleField name="LONGITUDE" type="float"></SimpleField>
+	<SimpleField name="MAR_WARD" type="string"></SimpleField>
+	<SimpleField name="XCOORD" type="string"></SimpleField>
+	<SimpleField name="YCOORD" type="string"></SimpleField>
+	<SimpleField name="ZIPCODE" type="string"></SimpleField>
+	<SimpleField name="MAR_ID" type="string"></SimpleField>
+</Schema>
+<Folder><name>Books_and_Barber_Shops</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="BARBERSHOP">C Alan Salon</SimpleData>
+		<SimpleData name="ADDRESS">705 Florida Ave NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 265-1772</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.91655897</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02222783</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 1</SimpleData>
+		<SimpleData name="XCOORD">398072.32</SimpleData>
+		<SimpleData name="YCOORD">138743.68</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">302436</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0222301181272,38.916566424434</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="BARBERSHOP">Eagle Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">2800 Georgia Ave NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 534-7559</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.92620465</SimpleData>
+		<SimpleData name="LONGITUDE">-77.0230554</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 1</SimpleData>
+		<SimpleData name="XCOORD">398000.82</SimpleData>
+		<SimpleData name="YCOORD">139814.45</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">284501</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0230576943927,38.9262121086708</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="BARBERSHOP">Greg's Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">1909 7th St NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 745-9183</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.91591127</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02172189</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 1</SimpleData>
+		<SimpleData name="XCOORD">398116.18</SimpleData>
+		<SimpleData name="YCOORD">138671.77</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">218561</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0217241767071,38.9159187303029</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="BARBERSHOP">Hollywood Styles &amp; Cuts
+</SimpleData>
+		<SimpleData name="ADDRESS">710 S St NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 462-7191</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.913936</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02230242</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 6</SimpleData>
+		<SimpleData name="XCOORD">398065.78</SimpleData>
+		<SimpleData name="YCOORD">138452.51</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">300388</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0223047096271,38.9139434531335</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="BARBERSHOP">Joseph's Babershop</SimpleData>
+		<SimpleData name="ADDRESS">2624 Georigia Ave NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 597-8458</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.92490523</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02289457</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 1</SimpleData>
+		<SimpleData name="XCOORD">398014.73</SimpleData>
+		<SimpleData name="YCOORD">139670.2</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">232389</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0228968609696,38.9249126903607</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="BARBERSHOP">Showtime Hair Design</SimpleData>
+		<SimpleData name="ADDRESS">923 U St NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 332-2526</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.91718397</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02489352</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 1</SimpleData>
+		<SimpleData name="XCOORD">397841.16</SimpleData>
+		<SimpleData name="YCOORD">138813.12</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">239465</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0248958130249,38.917191425496</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="BARBERSHOP">Spruill's Bluebird Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">3219 Georgia Ave NW WDC 20010</SimpleData>
+		<SimpleData name="PHONE">(202) 722-9778</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.93089479</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02322969</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 1</SimpleData>
+		<SimpleData name="XCOORD">397985.84</SimpleData>
+		<SimpleData name="YCOORD">140335.1</SimpleData>
+		<SimpleData name="ZIPCODE">20010</SimpleData>
+		<SimpleData name="MAR_ID">228953</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0232319784145,38.9309022525171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="BARBERSHOP">Wanda's on 7th</SimpleData>
+		<SimpleData name="ADDRESS">1851 7th St NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 422-7946</SimpleData>
+		<SimpleData name="WARD">1</SimpleData>
+		<SimpleData name="LATITUDE">38.91533124</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02165817</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 1</SimpleData>
+		<SimpleData name="XCOORD">398121.69</SimpleData>
+		<SimpleData name="YCOORD">138607.38</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">218539</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0216604659901,38.915338695441</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="BARBERSHOP">Cuttin -Up</SimpleData>
+		<SimpleData name="ADDRESS">750 N St NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 425-3275</SimpleData>
+		<SimpleData name="WARD">2</SimpleData>
+		<SimpleData name="LATITUDE">38.90710293</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02258909</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 2</SimpleData>
+		<SimpleData name="XCOORD">398040.73</SimpleData>
+		<SimpleData name="YCOORD">137693.99</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">301915</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.022591382755,38.907110389398</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="BARBERSHOP">A Sharper Image Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">5115 Georgia Ave NW WDC 20011</SimpleData>
+		<SimpleData name="PHONE">(202) 257-5630</SimpleData>
+		<SimpleData name="WARD">4</SimpleData>
+		<SimpleData name="LATITUDE">38.95246796</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02727536</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 4</SimpleData>
+		<SimpleData name="XCOORD">397635.77</SimpleData>
+		<SimpleData name="YCOORD">142730.01</SimpleData>
+		<SimpleData name="ZIPCODE">20011</SimpleData>
+		<SimpleData name="MAR_ID">251738</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0272776565051,38.952475424426</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="BARBERSHOP">Diamond District Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">3929 Georgia Ave NW WDC 20011</SimpleData>
+		<SimpleData name="PHONE">(202) 534-7559</SimpleData>
+		<SimpleData name="WARD">4</SimpleData>
+		<SimpleData name="LATITUDE">38.93947816</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02462286</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 4</SimpleData>
+		<SimpleData name="XCOORD">397865.3</SimpleData>
+		<SimpleData name="YCOORD">141287.96</SimpleData>
+		<SimpleData name="ZIPCODE">20011</SimpleData>
+		<SimpleData name="MAR_ID">252527</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0246251539331,38.9394856180258</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="BARBERSHOP">Eddie's Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">3929 Georgia Ave NW WDC 20011</SimpleData>
+		<SimpleData name="PHONE">(202) 534-7559</SimpleData>
+		<SimpleData name="WARD">4</SimpleData>
+		<SimpleData name="LATITUDE">38.93947816</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02462286</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 4</SimpleData>
+		<SimpleData name="XCOORD">397865.3</SimpleData>
+		<SimpleData name="YCOORD">141287.96</SimpleData>
+		<SimpleData name="ZIPCODE">20011</SimpleData>
+		<SimpleData name="MAR_ID">252527</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0246251539331,38.9394856180258</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="BARBERSHOP">Powell's Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">227 Upshur St NW WDC 20011</SimpleData>
+		<SimpleData name="PHONE">(202) 722-9875</SimpleData>
+		<SimpleData name="WARD">4</SimpleData>
+		<SimpleData name="LATITUDE">38.94236217</SimpleData>
+		<SimpleData name="LONGITUDE">-77.01500836</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 4</SimpleData>
+		<SimpleData name="XCOORD">398698.89</SimpleData>
+		<SimpleData name="YCOORD">141607.93</SimpleData>
+		<SimpleData name="ZIPCODE">20011</SimpleData>
+		<SimpleData name="MAR_ID">244362</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0150106505496,38.942369631494</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="BARBERSHOP">Williams' Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">851 Upshur St NW WDC 20011</SimpleData>
+		<SimpleData name="PHONE">(202) 534-8862</SimpleData>
+		<SimpleData name="WARD">4</SimpleData>
+		<SimpleData name="LATITUDE">38.9420242</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02488466</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 4</SimpleData>
+		<SimpleData name="XCOORD">397842.68</SimpleData>
+		<SimpleData name="YCOORD">141570.6</SimpleData>
+		<SimpleData name="ZIPCODE">20011</SimpleData>
+		<SimpleData name="MAR_ID">285448</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.024886954968,38.9420316663905</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="BARBERSHOP">Bennet Career Institute</SimpleData>
+		<SimpleData name="ADDRESS">700 Monroe St NE WDC 20017</SimpleData>
+		<SimpleData name="PHONE">(202) 526-1400</SimpleData>
+		<SimpleData name="WARD">5</SimpleData>
+		<SimpleData name="LATITUDE">38.93264131</SimpleData>
+		<SimpleData name="LONGITUDE">-76.99594045</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 5</SimpleData>
+		<SimpleData name="XCOORD">400351.98</SimpleData>
+		<SimpleData name="YCOORD">140528.73</SimpleData>
+		<SimpleData name="ZIPCODE">20017</SimpleData>
+		<SimpleData name="MAR_ID">300</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9959427333943,38.932648770167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="BARBERSHOP">Community Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">1931 N. Capitol St NE WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 635-9869</SimpleData>
+		<SimpleData name="WARD">5</SimpleData>
+		<SimpleData name="LATITUDE">38.91657075</SimpleData>
+		<SimpleData name="LONGITUDE">-77.00875873</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 5</SimpleData>
+		<SimpleData name="XCOORD">399240.41</SimpleData>
+		<SimpleData name="YCOORD">138744.79</SimpleData>
+		<SimpleData name="ZIPCODE">20002</SimpleData>
+		<SimpleData name="MAR_ID">53593</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0087610218695,38.9165782100487</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="BARBERSHOP">Hillman &amp; Son</SimpleData>
+		<SimpleData name="ADDRESS">1106 H St NE WDC 20002</SimpleData>
+		<SimpleData name="PHONE">(202) 396-9640</SimpleData>
+		<SimpleData name="WARD">6</SimpleData>
+		<SimpleData name="LATITUDE">38.90039374</SimpleData>
+		<SimpleData name="LONGITUDE">-76.99115379</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 6</SimpleData>
+		<SimpleData name="XCOORD">400767.35</SimpleData>
+		<SimpleData name="YCOORD">136949.01</SimpleData>
+		<SimpleData name="ZIPCODE">20002</SimpleData>
+		<SimpleData name="MAR_ID">74323</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9911560732323,38.9004011956218</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="BARBERSHOP">Mason's Hair Gallery</SimpleData>
+		<SimpleData name="ADDRESS">1010 H St NE WDC 20002</SimpleData>
+		<SimpleData name="PHONE">(202) 399-6454</SimpleData>
+		<SimpleData name="WARD">6</SimpleData>
+		<SimpleData name="LATITUDE">38.90040769</SimpleData>
+		<SimpleData name="LONGITUDE">-76.99222972</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 6</SimpleData>
+		<SimpleData name="XCOORD">400674.02</SimpleData>
+		<SimpleData name="YCOORD">136950.55</SimpleData>
+		<SimpleData name="ZIPCODE">20002</SimpleData>
+		<SimpleData name="MAR_ID">75791</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9922320042244,38.900415144973</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="BARBERSHOP">Powell's 2 Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">1232 H St NE WDC 20002</SimpleData>
+		<SimpleData name="PHONE">(202) 607-5172</SimpleData>
+		<SimpleData name="WARD">6</SimpleData>
+		<SimpleData name="LATITUDE">38.90038555</SimpleData>
+		<SimpleData name="LONGITUDE">-76.98908828</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 6</SimpleData>
+		<SimpleData name="XCOORD">400946.52</SimpleData>
+		<SimpleData name="YCOORD">136948.12</SimpleData>
+		<SimpleData name="ZIPCODE">20002</SimpleData>
+		<SimpleData name="MAR_ID">70429</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9890905561276,38.9003930035935</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="BARBERSHOP">Shabazz Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">704 O St NW WDC 20001</SimpleData>
+		<SimpleData name="PHONE">(202) 299-9322</SimpleData>
+		<SimpleData name="WARD">6</SimpleData>
+		<SimpleData name="LATITUDE">38.90833566</SimpleData>
+		<SimpleData name="LONGITUDE">-77.02247061</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 6</SimpleData>
+		<SimpleData name="XCOORD">398051.04</SimpleData>
+		<SimpleData name="YCOORD">137830.83</SimpleData>
+		<SimpleData name="ZIPCODE">20001</SimpleData>
+		<SimpleData name="MAR_ID">302134</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0224729036373,38.9083431145918</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="BARBERSHOP">Benning Barber</SimpleData>
+		<SimpleData name="ADDRESS">4228 Benning Road NE WDC 20019</SimpleData>
+		<SimpleData name="PHONE">(202) 396-5553</SimpleData>
+		<SimpleData name="WARD">7</SimpleData>
+		<SimpleData name="LATITUDE">38.89300136</SimpleData>
+		<SimpleData name="LONGITUDE">-76.9415986</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 7</SimpleData>
+		<SimpleData name="XCOORD">405066.46</SimpleData>
+		<SimpleData name="YCOORD">136129.98</SimpleData>
+		<SimpleData name="ZIPCODE">20019</SimpleData>
+		<SimpleData name="MAR_ID">24953</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9416008630842,38.8930088115667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="BARBERSHOP">Fresh Cuts &amp; Styles</SimpleData>
+		<SimpleData name="ADDRESS">4051 Minnesota Ave NE WDC 20019</SimpleData>
+		<SimpleData name="PHONE">(202) 367-2764</SimpleData>
+		<SimpleData name="WARD">7</SimpleData>
+		<SimpleData name="LATITUDE">38.89610856</SimpleData>
+		<SimpleData name="LONGITUDE">-76.94756872</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 7</SimpleData>
+		<SimpleData name="XCOORD">404548.34</SimpleData>
+		<SimpleData name="YCOORD">136474.59</SimpleData>
+		<SimpleData name="ZIPCODE">20019</SimpleData>
+		<SimpleData name="MAR_ID">309099</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9475709839433,38.8961160181612</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="BARBERSHOP">Mr Lee's</SimpleData>
+		<SimpleData name="ADDRESS">4409 Bowen Rd SE WDC 20019</SimpleData>
+		<SimpleData name="PHONE">(202) 575-5110</SimpleData>
+		<SimpleData name="WARD">7</SimpleData>
+		<SimpleData name="LATITUDE">38.87334348</SimpleData>
+		<SimpleData name="LONGITUDE">-76.93518747</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 7</SimpleData>
+		<SimpleData name="XCOORD">405624.19</SimpleData>
+		<SimpleData name="YCOORD">133948.18</SimpleData>
+		<SimpleData name="ZIPCODE">20019</SimpleData>
+		<SimpleData name="MAR_ID">22119</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9351897289747,38.87335092685</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="BARBERSHOP">Unique Cuts</SimpleData>
+		<SimpleData name="ADDRESS">4526 Benning Road SE WDC 20019</SimpleData>
+		<SimpleData name="PHONE">(202) 450-4543</SimpleData>
+		<SimpleData name="WARD">7</SimpleData>
+		<SimpleData name="LATITUDE">38.88903743</SimpleData>
+		<SimpleData name="LONGITUDE">-76.93663315</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 7</SimpleData>
+		<SimpleData name="XCOORD">405497.53</SimpleData>
+		<SimpleData name="YCOORD">135690.24</SimpleData>
+		<SimpleData name="ZIPCODE">20019</SimpleData>
+		<SimpleData name="MAR_ID">278513</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9366354104579,38.889044880063</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="BARBERSHOP">Classic Kuts</SimpleData>
+		<SimpleData name="ADDRESS">3222 22nd St SE WDC 20020</SimpleData>
+		<SimpleData name="PHONE">(202) 610-1345</SimpleData>
+		<SimpleData name="WARD">8</SimpleData>
+		<SimpleData name="LATITUDE">38.85044736</SimpleData>
+		<SimpleData name="LONGITUDE">-76.97396978</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 8</SimpleData>
+		<SimpleData name="XCOORD">402259.53</SimpleData>
+		<SimpleData name="YCOORD">131404.87</SimpleData>
+		<SimpleData name="ZIPCODE">20020</SimpleData>
+		<SimpleData name="MAR_ID">278353</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9739720564421,38.8504548049334</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="BARBERSHOP">Kutt-N-Up</SimpleData>
+		<SimpleData name="ADDRESS">1433 Good Hope Rd SE WDC 20020</SimpleData>
+		<SimpleData name="PHONE">(202) 678-0414</SimpleData>
+		<SimpleData name="WARD">8</SimpleData>
+		<SimpleData name="LATITUDE">38.86642842</SimpleData>
+		<SimpleData name="LONGITUDE">-76.98415723</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 8</SimpleData>
+		<SimpleData name="XCOORD">401374.91</SimpleData>
+		<SimpleData name="YCOORD">133178.68</SimpleData>
+		<SimpleData name="ZIPCODE">20020</SimpleData>
+		<SimpleData name="MAR_ID">286193</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.984159504857,38.8664358660525</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="BARBERSHOP">Like That</SimpleData>
+		<SimpleData name="ADDRESS">2449 Good Hope Rd SE WDC 20020</SimpleData>
+		<SimpleData name="PHONE">(202) 610-3700</SimpleData>
+		<SimpleData name="WARD">8</SimpleData>
+		<SimpleData name="LATITUDE">38.86120582</SimpleData>
+		<SimpleData name="LONGITUDE">-76.96972256</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 8</SimpleData>
+		<SimpleData name="XCOORD">402627.81</SimpleData>
+		<SimpleData name="YCOORD">132599.25</SimpleData>
+		<SimpleData name="ZIPCODE">20020</SimpleData>
+		<SimpleData name="MAR_ID">287064</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9697248367422,38.861213268674</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="BARBERSHOP">MLK Community Barbershop</SimpleData>
+		<SimpleData name="ADDRESS">2739 MLK Jr Ave SE WDC 20032</SimpleData>
+		<SimpleData name="PHONE">(202) 563-0151</SimpleData>
+		<SimpleData name="WARD">8</SimpleData>
+		<SimpleData name="LATITUDE">38.84711483</SimpleData>
+		<SimpleData name="LONGITUDE">-76.99636878</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 8</SimpleData>
+		<SimpleData name="XCOORD">400315.22</SimpleData>
+		<SimpleData name="YCOORD">131034.62</SimpleData>
+		<SimpleData name="ZIPCODE">20032</SimpleData>
+		<SimpleData name="MAR_ID">44976</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9963710543137,38.8471222749793</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="BARBERSHOP">My Three Sons</SimpleData>
+		<SimpleData name="ADDRESS">3125 MLK Ave SE WDC 20032</SimpleData>
+		<SimpleData name="PHONE">(202) 561-0396</SimpleData>
+		<SimpleData name="WARD">8</SimpleData>
+		<SimpleData name="LATITUDE">38.84334765</SimpleData>
+		<SimpleData name="LONGITUDE">-77.00018914</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 8</SimpleData>
+		<SimpleData name="XCOORD">399983.58</SimpleData>
+		<SimpleData name="YCOORD">130616.43</SimpleData>
+		<SimpleData name="ZIPCODE">20032</SimpleData>
+		<SimpleData name="MAR_ID">39883</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.0001914228588,38.8433550897433</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#Books_and_Barber_Shops">
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="BARBERSHOP">Next Level</SimpleData>
+		<SimpleData name="ADDRESS">2408 Martin Luther King Jr Ave SE 200020</SimpleData>
+		<SimpleData name="PHONE">(202) 678-1180</SimpleData>
+		<SimpleData name="WARD">8</SimpleData>
+		<SimpleData name="LATITUDE">38.86237519</SimpleData>
+		<SimpleData name="LONGITUDE">-76.99248378</SimpleData>
+		<SimpleData name="MAR_WARD">Ward 8</SimpleData>
+		<SimpleData name="XCOORD">400652.33</SimpleData>
+		<SimpleData name="YCOORD">132728.65</SimpleData>
+		<SimpleData name="ZIPCODE">20020</SimpleData>
+		<SimpleData name="MAR_ID">47555</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.9924860572463,38.8623826411335</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
