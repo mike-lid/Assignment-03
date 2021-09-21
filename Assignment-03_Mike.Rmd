@@ -47,10 +47,51 @@ clusters <- clusters %>%
 
 ``` {r plot}
 ggplot(food) +
-  geom_sf(fill = "lightblue", color = NA) +
-  geom_sf(data = bshop, color = "darkgreen", size = 0.01) +
-  geom_sf(data = library, size = 0.01) +
-  geom_sf(data= clusters, fill = NA, color = "gray") +
+  geom_sf(fill = "yellow", color = "grey", alpha = .2) +
+  geom_sf(data = bshop, color = "navy", size = 2) +
+  geom_sf(data = library, color = "darkcyan", size = 2) +
+  geom_sf(data= clusters, fill = NA, color = "orange")+
   theme_map() +
   annotation_scale()
+```
+
+```{r}
+"amount of low food access areas in per neighborhood district"
+clusters <- clusters %>%
+  mutate(num_libraries = lengths(st_covers(clusters, library)))
+
+ggplot(clusters) +
+  geom_sf(color = "white", 
+          aes(fill = num_libraries)) +
+  scale_fill_viridis_c(name = "Washington DC Districts\nby number of libraries",
+                       breaks = breaks <- seq(0, 3, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "libraries")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+  theme_map()
+```
+```{r}
+"amount of low food access areas in per neighborhood district"
+clusters <- clusters %>%
+  mutate(num_food = lengths(st_covers(clusters, food)))
+
+ggplot(clusters) +
+  geom_sf(color = "white", 
+          aes(fill = num_food)) +
+  scale_fill_viridis_c(name = "Washington DC Districts\nby number of low-food access areas",
+                       breaks = breaks <- seq(0, 30, by = 5),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "food")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+  theme_map()
 ```
