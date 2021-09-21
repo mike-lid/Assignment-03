@@ -29,8 +29,7 @@ clusters <- st_read("polygon-d-clusters.kml",
                  quiet = TRUE) 
 ```
 
-
-```{r set project coordinate, message=FALSE}
+```{r set project coordinate}
 MD_state_plane <- "+proj=lcc +lat_1=38.3 +lat_2=39.45 +lat_0=37.66666666666666 +lon_0=-77 +x_0=400000 +y_0=0 +ellps=GRS80 +units=m +no_def"
 
 bshop <- bshop %>%
@@ -44,4 +43,14 @@ food <- food %>%
 
 clusters <- clusters %>%
   st_transform(MD_state_plane)
+```
+
+``` {r plot}
+ggplot(food) +
+  geom_sf(fill = "lightblue", color = NA) +
+  geom_sf(data = bshop, color = "darkgreen", size = 0.01) +
+  geom_sf(data = library, size = 0.01) +
+  geom_sf(data= clusters, fill = NA, color = "gray") +
+  theme_map() +
+  annotation_scale()
 ```
