@@ -15,22 +15,22 @@ output: html_document
   library(nngeo)
 ```
 
-```{r}
-bshop <- st_read("https://opendata.dc.gov/datasets/books-and-barber-shops/explore?location=38.897907%2C-76.981231%2C13.02", 
+```{r load data, message=FALSE}
+bshop <- st_read("point-a-bshop.kml", 
                   quiet = TRUE) 
 
-library <- st_read("https://opendata.dc.gov/datasets/libraries/explore?location=38.905806%2C-77.013376%2C12.65", 
+library <- st_read("point-b-libraries.kml", 
                  quiet = TRUE)
 
-food-access <- st_read("https://opendata.dc.gov/datasets/low-food-access-areas/explore?location=38.896624%2C-77.010328%2C12.59", 
+food <- st_read("polygon-c-food-access.kml", 
                    quiet = TRUE) 
 
-clusters <- st_read("https://opendata.dc.gov/datasets/neighborhood-clusters/explore?location=38.893798%2C-77.014470%2C11.83", 
+clusters <- st_read("polygon-d-clusters.kml", 
                  quiet = TRUE) 
 ```
 
 
-```{r}
+```{r set project coordinate, message=FALSE}
 MD_state_plane <- "+proj=lcc +lat_1=38.3 +lat_2=39.45 +lat_0=37.66666666666666 +lon_0=-77 +x_0=400000 +y_0=0 +ellps=GRS80 +units=m +no_def"
 
 bshop <- bshop %>%
@@ -39,7 +39,7 @@ bshop <- bshop %>%
 library <- library %>%
   st_transform(MD_state_plane)
 
-food-access <- food-access %>%
+food <- food %>%
   st_transform(MD_state_plane)
 
 clusters <- clusters %>%
