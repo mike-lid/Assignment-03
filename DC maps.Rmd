@@ -20,8 +20,8 @@ Load Data
 
 ```{r}
 
-bshop <- st_read("C:/Users/emmab/Desktop/Books.kml", quiet = TRUE)
-food <- st_read("C:/Users/emmab/Desktop/Food.kml", quiet = TRUE)
+bshop <- st_read("point-a-bshop.kml", quiet = TRUE)
+food <- st_read("polygon-c-food-access.kml", quiet = TRUE)
 clusters <- st_read("C:/Users/emmab/Desktop/Nhoods.kml", quiet = TRUE)
 library <- st_read("C:/Users/emmab/Desktop/Libraries.kml", quiet = TRUE) 
 
