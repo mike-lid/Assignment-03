@@ -1,0 +1,233 @@
+---
+title: "Washington DC maps"
+author: "Emma Bonanno"
+date: "9/20/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(sf)
+library(tidyverse)
+library(ggthemes)
+library(ggspatial)
+library(units)
+library(nngeo)
+
+```
+Load Data
+
+```{r}
+
+bshop <- st_read("C:/Users/emmab/Desktop/Books.kml", quiet = TRUE)
+food <- st_read("C:/Users/emmab/Desktop/Food.kml", quiet = TRUE)
+clusters <- st_read("C:/Users/emmab/Desktop/Nhoods.kml", quiet = TRUE)
+library <- st_read("C:/Users/emmab/Desktop/Libraries.kml", quiet = TRUE) 
+
+```
+
+## Transforming the Data
+
+```{r}
+DC_state_plane <- "+proj=lcc +lat_1=38.3 +lat_2=39.45 +lat_0=37.66666666666666 +lon_0=-77 +x_0=400000 +y_0=0 +ellps=GRS80 +units=m +no_def"
+
+bshop <- bshop %>%
+  st_transform(DC_state_plane)
+
+food <- food %>%
+  st_transform(DC_state_plane)
+
+clusters <- clusters %>%
+  st_transform(DC_state_plane)
+
+library <- library %>%
+  st_transform(DC_state_plane)
+```
+Maps
+```{r}
+ggplot(food) +
+  geom_sf(fill = "orange", color = NA) +
+  geom_sf(data = bshop, size = 1) +
+  geom_sf(data= clusters, fill = NA, color = "gray") +
+  theme_map() +
+  annotation_scale()
+```
+```{r}
+```
+1000 km radius around Libraries
+
+```{r}
+library_buffer <- st_buffer(library, dist = 1000) %>%
+  st_union()
+
+ggplot(library_buffer) +
+  geom_sf() +
+  theme_map()
+```
+Books and Barbershops within a 1000 m radius of Libraries
+```{r}
+bshop_library <- bshop[library_buffer,]
+  
+ggplot(library_buffer) +
+  geom_sf() +
+  geom_sf(data = bshop_library, 
+          color = "darkgreen", 
+          size = 2) +
+  theme_map()
+```
+Join dataframes - How many bshops are within 1000 m of a library?
+```{r}
+bshop <- bshop %>%
+  st_join(bshop_library) %>%
+  mutate(by_library = !is.na(Name.y))
+
+n_library_bshop <- sum(bshop$by_library)
+
+n_library_bshop
+```
+What percent of all bshops is this?
+```{r}
+n_bshop <- length(bshop$by_library)
+
+pct_library_bshop <- n_library_bshop / n_bshop
+
+pct_library_bshop
+
+```
+
+
+
+
+
+
+
+How many Bshops are in each neighborhood?
+```{r}
+clusters <- clusters %>%
+  mutate(num_bshop = lengths(st_covers(clusters, bshop)))
+
+ggplot(clusters) +
+  geom_sf(color = "white", 
+          aes(fill = num_bshop)) +
+  scale_fill_viridis_c(option = "plasma", name = "Number of Books and Barbershops Locations
+in DC Neighborhoods",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Books and Barbershops")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_fancy_orienteering()) +
+theme_map() +
+  theme(legend.position = "left",
+        legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+Number of bshops in food
+```{r}
+food <- food %>%
+  mutate(num_bshop = lengths(st_covers(food,bshop)))
+
+ggplot(food) +
+  geom_sf(color = NA, 
+          aes(fill = num_bshop)) +
+  scale_fill_viridis_c(option = "plasma", name = "Number of Books and Barbershops in 
+Low Food Access Areas
+  ",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Books and Barbershops")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_fancy_orienteering()) +
+theme_map() +
+  theme(legend.position = "left", legend.background = element_rect(fill = alpha("white", 0.5),  color = "gray"))
+```
+
+Density of Books and Barbershops in Low Access Food Areas
+```{r}
+food <- food %>%
+  mutate(area = set_units(st_area(food), km^2)) %>%
+  mutate(bshop_dens = as.numeric(num_bshop / area))
+
+ggplot(food) +
+  geom_sf(color = NA,
+          aes(fill = bshop_dens)) +
+    scale_fill_viridis_c(name = 
+                           "Low Food Access Areas by Number of Books and Barbershops",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Books and Barbershops per square km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+Number of Libraries in Low Food Access
+```{r}
+food <- food %>%
+  mutate(num_library = lengths(st_covers(food,library)))
+
+ggplot(food) +
+  geom_sf(color = NA, 
+          aes(fill = num_library)) +
+  scale_fill_viridis_c(name = "Number of Libraries in Low Food Access Areas",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Libraries")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_fancy_orienteering()) +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5),  color = "gray"))
+```
+
+
+
+Density of Libraries in Low Food Access
+```{r}
+
+food <- food %>%
+  mutate(num_library = lengths(st_covers(food, library))) %>%
+  mutate(area = set_units(st_area(food), km^2)) %>%
+  mutate(libary_dens = as.numeric(num_library / area))
+
+ggplot(food) +
+  geom_sf(color = NA,
+          aes(fill = library_dens)) +
+    scale_fill_viridis_c(name = 
+                           "Density of Libraries in Low Food Access Areas",
+                       breaks = breaks <- seq(0, 3, by = .5),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Libraries per square km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
