@@ -187,7 +187,7 @@ theme_map() +
 
 
 
-Density of Libraries in Low Food Access
+Density of Libraries in Low Food Access 
 ```{r}
 
 food <- food %>%
