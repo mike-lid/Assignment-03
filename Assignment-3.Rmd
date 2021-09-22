@@ -5,26 +5,42 @@ date: "9/23/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r load packages, message=FALSE}
+#above line labels the code chunk as "load packages" without seeing any of the package loading messages
+  library(sf)
+  library(tidyverse)
+  library(ggthemes)
+  library(ggspatial)
+  library(units)
+  library(nngeo)
 ```
 
-## R Markdown
+```{r load data, message=FALSE}
+bshop <- st_read("point-a-bshop.kml", 
+                  quiet = TRUE) 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+library <- st_read("point-b-libraries.kml", 
+                 quiet = TRUE)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+food <- st_read("polygon-c-food-access.kml", 
+                   quiet = TRUE) 
 
-```{r cars}
-summary(cars)
+clusters <- st_read("polygon-d-clusters.kml", 
+                 quiet = TRUE) 
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r section, message=FALSE}
+###KAYLA BELOW
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r section, message=FALSE}
+###EMMA BELOW
+```
+
+
+
+```{r section, message=FALSE}
+###MIKE BELOW
+```
