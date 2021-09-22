@@ -28,6 +28,23 @@ food <- st_read("polygon-c-food-access.kml",
 clusters <- st_read("polygon-d-clusters.kml", 
                  quiet = TRUE) 
 ```
+## Transforming the Data
+
+```{r}
+DC_state_plane <- "+proj=lcc +lat_1=38.3 +lat_2=39.45 +lat_0=37.66666666666666 +lon_0=-77 +x_0=400000 +y_0=0 +ellps=GRS80 +units=m +no_def"
+
+bshop <- bshop %>%
+  st_transform(DC_state_plane)
+
+food <- food %>%
+  st_transform(DC_state_plane)
+
+clusters <- clusters %>%
+  st_transform(DC_state_plane)
+
+library <- library %>%
+  st_transform(DC_state_plane)
+```
 
 ```{r section, message=FALSE}
 ###KAYLA BELOW
@@ -38,8 +55,49 @@ clusters <- st_read("polygon-d-clusters.kml",
 ```{r section, message=FALSE}
 ###EMMA BELOW
 ```
+## How many Books and Barbershops are in each neighborhood in DC?
+```{r}
+clusters <- clusters %>%
+  mutate(num_bshop = lengths(st_covers(clusters, bshop)))
 
+ggplot(clusters) +
+  geom_sf(color = "white", 
+          aes(fill = num_bshop)) +
+  scale_fill_viridis_c(option = "plasma", name = "Number of Books and Barbershops Locations
+in DC Neighborhoods",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Books and Barbershops")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_fancy_orienteering()) +
+theme_map() +
+  theme(legend.position = "left",
+        legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+```{r}
+```
+## How many Books and Barbershops are in each Low Food Access Area in DC?
+```{r}
+food <- food %>%
+  mutate(num_bshop = lengths(st_covers(food,bshop)))
 
+ggplot(food) +
+  geom_sf(color = NA, 
+          aes(fill = num_bshop)) +
+  scale_fill_viridis_c(option = "plasma", name = "Number of Books and Barbershops in
+Low Food Access Areas
+",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Books and Barbershops")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_fancy_orienteering()) +
+theme_map() +
+  theme(legend.position = "left", legend.background = element_rect(fill = alpha("white", 0.5),  color = "gray"))
+```
 
 ```{r section, message=FALSE}
 ###MIKE BELOW
