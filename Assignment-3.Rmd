@@ -2,8 +2,8 @@
 title: "Comparing the New Barbershop&Bookstore Initiative and Presence of Public Libraries to DC Residential Areas"
 author:
 - name: "Emma Bonanno + Mike Lidwin + Kayla Myros"
-  affiliation: "VIS2128: Spatial Analysis | Assignment 01"
-date: "06 September 2021"
+  affiliation: "VIS2128: Spatial Analysis | Assignment 03"
+date: "22 September 2021"
 output: 
   html_document:
     code_folding: hide
