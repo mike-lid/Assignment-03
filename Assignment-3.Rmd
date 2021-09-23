@@ -16,7 +16,7 @@ Disclaimer: We used a very limited amount of data and do not intend to draw over
 
 (Code-Folding was activated to reveal the code that helped create each map, in order to reveal aspects of the code that were customized to achieve the resulting map)
 
-```{r load packages, message=FALSE}
+```{r load packages, message=FALSE, include = FALSE}
 #above line labels the code chunk as "load packages" without seeing any of the package loading messages
   library(sf)
   library(tidyverse)
@@ -27,7 +27,7 @@ Disclaimer: We used a very limited amount of data and do not intend to draw over
   library(ggeasy)
 ```
 
-```{r load data, message=FALSE}
+```{r load data, message=FALSE, include = FALSE}
   
   #load and define datasets
   bshop <- st_read("point-a-bshop.kml", 
@@ -40,7 +40,7 @@ Disclaimer: We used a very limited amount of data and do not intend to draw over
                  quiet = TRUE) 
 ```
 
-```{r}
+```{r project coordinates, message = FALSE, include = FALSE}
 
 #load appropriate projection system for the DC area, and transform the data accordingly.
 DC_state_plane <- "+proj=lcc +lat_1=38.3 +lat_2=39.45 +lat_0=37.66666666666666 +lon_0=-77 +x_0=400000 +y_0=0 +ellps=GRS80 +units=m +no_def"
@@ -124,19 +124,19 @@ ggplot(food) +
   scale_fill_manual(values = "yellow", name = "")
 ```
 
-```{r section, message=FALSE}
+```{r Kayla, message=FALSE, include = FALSE}
 ###KAYLA BELOW
 ```
 
 
 
-```{r section, message=FALSE}
+```{r Emma, message=FALSE, include = FALSE}
 ###EMMA BELOW
 ```
 ## How many Books and Barbershops are in each neighborhood in Washington, DC?
 
 This map shows the number of locations of Books and Barbershops programs in each neighborhood in DC. The goal was to assess if this particular program was particularly over- or under- represented in certain neighborhoods. 
-```{r}
+```{r map3, message = FALSE}
 clusters <- clusters %>%
   mutate(num_bshop = lengths(st_covers(clusters, bshop)))
 
@@ -161,7 +161,7 @@ theme_map() +
 ## How many Books and Barbershops are in each Low Food Access Area in DC?
 
 The Books and Barbershops program is an attempt to raise awareness of the value of academic mentoring and early childhood literacy, both basic community needs. We chose to look at the locations of these data points in reference to a data set that demonstrates unequal access to another basic need - food. We wondered whether the B&B locations would appear in the low-access food areas, a potential indication of a community that is currently being underserved. However, as seen with the map, the B&B initiative seems to occur mostly in areas without low-access to food.
-```{r}
+```{r map4, message = FALSE}
 food <- food %>%
   mutate(num_bshop = lengths(st_covers(food,bshop)))
 
@@ -181,7 +181,7 @@ theme_map() +
   theme(legend.position = "left", legend.background = element_rect(fill = alpha("white", 0.5),  color = "gray"))
 ```
 
-```{r section, message=FALSE, include = FALSE}
+```{r Mike, message=FALSE, include = FALSE}
 ###MIKE BELOW
 ```
 
@@ -189,7 +189,7 @@ theme_map() +
 
 Before comparing neighborhoods that contained Barbershop & Book locations, we first wanted to see how many libraries existed in each neighborhood.  We used this data as a rough, and likely inaccurate, indication of whether a neighborhood had access to educational and learning-based programs. While several neighborhoods had at least one library, the areas with 2 libraries indicate libraries of the Smithsonian Institute. The Southeast area, compared to the northern area in DC, had  the least amount of neighborhood clusters with libraries - 6 neighborhood cluster areas had no public library within their boundary.
 
-```{r, message= FALSE, warning = FALSE}
+```{r map5, message= FALSE, warning = FALSE}
 "amount of libraries in per neighborhood district"
 clusters <- clusters %>%
   mutate(num_libraries = lengths(st_covers(clusters, library)))
@@ -212,7 +212,7 @@ theme_map() +
 
 The plan of Washington, DC (like most, if not all, US cities) reveals a stark racial divide in which residents live in which ward. Historically, residents of the lower and eastern wards in DC experience the most financial inequity of the city. We hypothesized that these would also be the areas that contain the most food deserts. The map somewhat confirmed this hypothesis, given that one of the neighborhoods in the lower wards contained 5 food desert areas within it. Wealthy areas, such as Dupont, Kalorama Circle, and Logan Circle, did not contain many low food access areas, if at all.
 
-```{r}
+```{r map6, message = FALSE, warning = FALSE}
 "amount of low food access areas in per neighborhood district"
 clusters <- clusters %>%
   mutate(num_food = lengths(st_covers(clusters, food)))

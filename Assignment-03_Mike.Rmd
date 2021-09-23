@@ -55,7 +55,7 @@ ggplot(food) +
   annotation_scale()
 ```
 
-```{r}
+```{r, message= FALSE, warning = FALSE}
 "amount of low food access areas in per neighborhood district"
 clusters <- clusters %>%
   mutate(num_libraries = lengths(st_covers(clusters, library)))
@@ -71,9 +71,7 @@ ggplot(clusters) +
   annotation_north_arrow(location = "tr",
                          style = north_arrow_minimal()) +
 theme_map() +
-  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
-                                         color = "gray"))
-  theme_map()
+  theme(legend.position = "left", legend.background = element_rect(fill = alpha("white", 0.5),  color = "gray"))
 ```
 ```{r}
 "amount of low food access areas in per neighborhood district"
@@ -91,7 +89,5 @@ ggplot(clusters) +
   annotation_north_arrow(location = "tr",
                          style = north_arrow_minimal()) +
 theme_map() +
-  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
-                                         color = "gray"))
-  theme_map()
+  theme(legend.position = "left", legend.background = element_rect(fill = alpha("white", 0.5),  color = "gray"))
 ```
