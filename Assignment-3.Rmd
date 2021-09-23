@@ -130,9 +130,6 @@ ggplot(food) +
 ###KAYLA BELOW
 ```
 
-## Buffer the library data points with a half kilometer buffer
-## Create a variable to find the overlap of Barbershop Books within a half kilometer of a public library
-## Merge the library file with the Barbershop Books file 
 ```{r}
 libr_buffer <- st_buffer(library, dist = 500) %>%
   st_union()
@@ -150,9 +147,12 @@ n_bnb <- length(bshop$by_library)
 
 pct_library_bshop <- n_libr_bnb / n_bnb
 ```
-## Mapping the number and proportion of Book-Barbershop points within a half kilometer of a public library point.
+
+## Mapping the Number and Proportion of Book-Barbershop Points within a Half-Kilometer of a Public Library Point.
 
 Barbershop Books is a community literacy program that provides age appropriate reading materials for elementary school aged children in barbershops around D.C. As of 2021, there were 30 recorded barbershops participating in this program. The map below compares the number of these participating barbershops within a half kilometer distance to a public library. This comparison provides context for areas in D.C. that have access to free reading materials.
+
+To accomplish this, we buffered the library data points with a half kilometer buffer, then created a variable to find the overlap of Barbershop Books within a half kilometer of a public library before merging the library file with the Barbershop Books file.
 
 ```{r}
 left_side  <- st_bbox(clusters)$xmin
@@ -168,14 +168,14 @@ top_side <- st_bbox(clusters)$ymax
 
 ggplot(clusters) +
   geom_sf(fill = NA, color= "darkgray" )+
-  geom_sf(data = libr_buffer, color= "lightgray", alpha =.75,
+  geom_sf(data = libr_buffer, color= "lightgray", alpha =.25,
           aes(fill = ""))+
   geom_sf(data = bshop, size = 1, alpha =.5,
            aes(color = "navy"))+
   scale_color_manual(values = c( "navy"),
           name = "Barbershops Books \nby proximity to Library", 
           labels = c("barbershops")) +
-  scale_fill_manual(values = c("lightgray"),name ="Library Buffer")+
+  scale_fill_manual(values = c("darkcyan"), name ="Library Buffer")+
   annotation_scale(location = "br") +
   annotation_north_arrow(location = "tr",
                          style = north_arrow_fancy_orienteering()) +
@@ -195,7 +195,9 @@ ggplot(clusters) +
         legend.background = element_rect(fill = alpha("white", 0.5), 
                                         color = "gray"))
 ```
-## The average density of public library points in each neighborhood cluster polygon
+
+
+## The Average Density of Public Library Points in Each Neighborhood Cluster Polygon
 
 For the second analysis, we mapped the density of libraries in the D.C. neighborhood clusters. This analysis shows which neighborhood clusters are served or under-served by libraries. 
 
@@ -228,6 +230,7 @@ theme_map() +
 ```{r Emma, message=FALSE, include = FALSE}
 ###EMMA BELOW
 ```
+
 ## How many Books and Barbershops are in each neighborhood in Washington, DC?
 
 This map shows the number of locations of Books and Barbershops programs in each neighborhood in DC. The goal was to assess if this particular program was particularly over- or under- represented in certain neighborhoods. 
