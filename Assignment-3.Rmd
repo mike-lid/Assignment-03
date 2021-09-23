@@ -18,7 +18,7 @@ The Books and Barbershops Initiative (B&B) recognizes the community presence tha
 
 **Contribution Statement:** We met as a team to pick our datasets and decide which combinations of points and polygons to map. Individually, we each created 2 of the 6 maps, and we helped each other troubleshoot throughout the process, meeting in person and via Zoom to troubleshoot eachother's questions. Mike created a shared GitHub repository, Emma wrote the contribution statement, and Kayla did a final check through of the RMD file for cohesion. (10 points for all)
 
-```{r load packages, message=FALSE, include = FALSE}
+```{r load packages, message=FALSE, include = FALSE, warning = FALSE}
 #above line labels the code chunk as "load packages" without seeing any of the package loading messages
   library(sf)
   library(tidyverse)
