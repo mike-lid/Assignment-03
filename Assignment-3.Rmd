@@ -12,9 +12,9 @@ output:
 
 The Books and Barbershops Initiative (B&B) recognizes the community presence that barbershops hold with local residents. Specifically in DC,  B&B  identifies select barbershops that offer community programs around academic mentoring and childhood literacy.(https://cfmb.dc.gov/page/books-and-barbershops.) We learned about this initiative while sourcing data on DC's open data website and enjoyed the opportunity of this project to not just learn about technicalities of mapping with R, but also in learning about cities through what data they have available and what interesting initiatives have a digital presence in their open source archives.
 
-Disclaimer: We used a very limited amount of data and do not intend to draw overarching conclusions from our maps, given that a variety of factors contribute to a communnity's access to certain basic needs.
+**Disclaimer:** We used a very limited amount of data and do not intend to draw overarching conclusions from our maps, given that a variety of factors contribute to a communnity's access to certain basic needs.
 
-(Code-Folding was activated to reveal the code that helped create each map, in order to reveal aspects of the code that were customized to achieve the resulting map)
+**Note:** Code-Folding was activated to reveal the code that helped create each map, in order to reveal aspects of the code that were customized to achieve the resulting map
 
 ```{r load packages, message=FALSE, include = FALSE}
 #above line labels the code chunk as "load packages" without seeing any of the package loading messages
@@ -58,7 +58,7 @@ library <- library %>%
   st_transform(DC_state_plane)
 ```
 
-#Referencing Four Variables
+##Base Map
 The below map shows the four variables we chose to map throughout each investigation:
 - Locations of the Books & Barbershops Initiative
 - Public Libraries
@@ -190,7 +190,6 @@ theme_map() +
 Before comparing neighborhoods that contained Barbershop & Book locations, we first wanted to see how many libraries existed in each neighborhood.  We used this data as a rough, and likely inaccurate, indication of whether a neighborhood had access to educational and learning-based programs. While several neighborhoods had at least one library, the areas with 2 libraries indicate libraries of the Smithsonian Institute. The Southeast area, compared to the northern area in DC, had  the least amount of neighborhood clusters with libraries - 6 neighborhood cluster areas had no public library within their boundary.
 
 ```{r map5, message= FALSE, warning = FALSE}
-"amount of libraries in per neighborhood district"
 clusters <- clusters %>%
   mutate(num_libraries = lengths(st_covers(clusters, library)))
 
@@ -213,7 +212,6 @@ theme_map() +
 The plan of Washington, DC (like most, if not all, US cities) reveals a stark racial divide in which residents live in which ward. Historically, residents of the lower and eastern wards in DC experience the most financial inequity of the city. We hypothesized that these would also be the areas that contain the most food deserts. The map somewhat confirmed this hypothesis, given that one of the neighborhoods in the lower wards contained 5 food desert areas within it. Wealthy areas, such as Dupont, Kalorama Circle, and Logan Circle, did not contain many low food access areas, if at all.
 
 ```{r map6, message = FALSE, warning = FALSE}
-"amount of low food access areas in per neighborhood district"
 clusters <- clusters %>%
   mutate(num_food = lengths(st_covers(clusters, food)))
 
