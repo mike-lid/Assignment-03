@@ -130,7 +130,100 @@ ggplot(food) +
 ###KAYLA BELOW
 ```
 
+## Buffer the library data points with a half kilometer buffer
+## Create a variable to find the overlap of Barbershop Books within a half kilometer of a public library
+## Merge the library file with the Barbershop Books file 
+```{r}
+libr_buffer <- st_buffer(library, dist = 500) %>%
+  st_union()
 
+bnb_libr <- bshop[libr_buffer,]
+
+bshop <- bshop %>%
+  st_join(bnb_libr) %>%
+  mutate(by_library = !is.na(Name.y))
+
+
+n_libr_bnb <- sum(bshop$by_library)
+
+n_bnb <- length(bshop$by_library)
+
+pct_library_bshop <- n_libr_bnb / n_bnb
+```
+## Mapping the number and proportion of Book-Barbershop points within a half kilometer of a public library point.
+
+Barbershop Books is a community literacy program that provides age appropriate reading materials for elementary school aged children in barbershops around D.C. As of 2021, there were 30 recorded barbershops participating in this program. The map below compares the number of these participating barbershops within a half kilometer distance to a public library. This comparison provides context for areas in D.C. that have access to free reading materials.
+
+```{r}
+left_side  <- st_bbox(clusters)$xmin
+top_side <- st_bbox(clusters)$ymax
+
+# ggplot(libr_buffer) +
+#   geom_sf(data = clusters, lty=0.2)+
+#   geom_sf(alpha = 0.25)+
+#   # geom_sf(data = bshop, color= "navy", alpha =.75)+
+#   geom_sf(data = bshop, size = 1, alpha =.5,
+#            aes(color = "red"))+
+
+
+ggplot(clusters) +
+  geom_sf(fill = NA, color= "darkgray" )+
+  geom_sf(data = libr_buffer, color= "lightgray", alpha =.75,
+          aes(fill = ""))+
+  geom_sf(data = bshop, size = 1, alpha =.5,
+           aes(color = "navy"))+
+  scale_color_manual(values = c( "navy"),
+          name = "Barbershops Books \nby proximity to Library", 
+          labels = c("barbershops")) +
+  scale_fill_manual(values = c("lightgray"),name ="Library Buffer")+
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_fancy_orienteering()) +
+  annotate(geom = "text", x = left_side, 
+           y = top_side, 
+           label = paste("Of the ", 
+                         prettyNum(n_bnb, big.mark = ","),
+                         " Barbershop Books locations in D.C. \n", 
+                         prettyNum(n_libr_bnb, big.mark = ","),
+                         " (", 
+                         prettyNum(100*pct_library_bshop, digits = 0),
+                         "%) are within 0.5\n kilometer of a public.",
+                         sep = ""),
+           hjust = 0, vjust = .5, size = 2) +
+  theme_map() +
+  theme(panel.background = element_rect(fill = "white"),
+        legend.background = element_rect(fill = alpha("white", 0.5), 
+                                        color = "gray"))
+```
+## The average density of public library points in each neighborhood cluster polygon
+
+For the second analysis, we mapped the density of libraries in the D.C. neighborhood clusters. This analysis shows which neighborhood clusters are served or under-served by libraries. 
+
+```{r}
+clusters <- clusters %>%
+  mutate(num_library = lengths(st_covers(clusters, library)))
+
+
+clusters <- clusters %>%
+  mutate(area = set_units(st_area(clusters), km^2)) %>%
+  mutate(library_dens = as.numeric(num_library / area))
+
+##create map##
+
+ggplot(clusters) +
+  geom_sf(color = "white", 
+          aes(fill = num_library)) +
+  scale_fill_viridis_c(option = "plasma", name = "D.C neighborhoods\nby library density",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "library / sq km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_fancy_orienteering()) +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
 
 ```{r Emma, message=FALSE, include = FALSE}
 ###EMMA BELOW
