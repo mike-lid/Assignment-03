@@ -58,7 +58,7 @@ library <- library %>%
   st_transform(DC_state_plane)
 ```
 
-##Base Map
+## Base Map
 The below map shows the four variables we chose to map throughout each investigation:
 - Locations of the Books & Barbershops Initiative
 - Public Libraries
